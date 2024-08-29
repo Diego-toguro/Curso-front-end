@@ -1,0 +1,132 @@
+<!DOCTYPE html><!--Indica que a página usará HTML5-->
+<html lang="en"><!--Inicia o HTML e define a linguagem a ser usada, EN no caso é o inglês-->
+<head><!--Contém metadado da página e configuração da mesma-->
+    <meta charset="UTF-8"><!--Indica os cararacteres que serão usados-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Define que a página conseguirá ser ajustada e vista até por um dispositivo móvel-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--Instrui o navegador a usar a configuração mais recente de renderização-->
+    <meta name="description" content="Trabalho HTML"><!--Pequena descrição da página para ser usada como referencia nos buscadores-->
+    <meta name="keywords" content="front-end, html, css, javascript"><!--Palavras chave do conteudo da página-->
+    <meta name="author" content="Diego Alcântara Martins"><!--Autor da página-->
+    <title>Trabalho HTML profª Mirka</title><!--Titulo descrito na aba do navegador-->
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        </style>
+</head>
+
+<body><!--Corpo de toda configuração visivel na página-->
+    <header><!--Cria um cabeçalho na página-->
+        <h1>Trabalho Front End</h1><!--Cria o título principal da página-->
+        <h2>HTML</h2><!--Cria o subtitulo da página-->
+    </header>
+
+    <p>Este trabalho consiste no <strong>aprendizado da linguagem</strong> HTML para podermos construir páginas no <em>formato front end</em></p><!--"strong" e "em" são tags para colocar em negrito e itálico-->
+<blockquote>"Só o conhecimento liberta." <cite>José Martí</cite></blockquote><!--"bloquote" permite criar um bloco de citações e "cite" eu cito o autor da citação descrita-->
+
+<h1>Formulários</h1>
+
+<form><!--Início do formulário-->
+    <label for="campo nome">Nome:</label> <!--Cria imagem com a opção campo nome-->
+    <input id="campo nome" type="text" placeholder="Digite o seu nome aqui" required><!--Tag que permite a entrada de dados digitadas pelo usuario na página-->
+    <br><br><!--Quebra de linha na página-->
+
+    <label for="campo email">Email:</label>
+    <input id="campo email" type="email" placeholder="Digite o seu email" required>
+
+    <br><br>
+
+    <label for="campo senha">Senha:</label>
+    <input id="campo senha" type="password" placeholder="Digite sua senha aqui" required>
+    <br><br>
+
+    <h2>Animal de Estimação</h2>
+    
+    <input type="radio" id="dog" name="animal" value="cahorro"><!--Tag pra escolher uma opção de muitas-->
+    <label for="dog">Cachorro</label>
+    <br><br>
+
+    <input type="radio" id="cat" name="animal" value="gato">
+    <label for="cat">Gato</label>
+    <br><br>
+
+    <input type="radio" id="bird" name="animal" value="passarinho">
+    <label for="bird">Passarinho</label>
+    <br><br>
+
+    <h2>O que você tem em casa?</h2>
+
+    <input id="item" type="checkbox" name="item" value="TV"><!--Tag pra escolher várias opção de muitas-->
+    <label for="TV">TV</label>
+    <br><br>
+
+    <input id="item" type="checkbox" name="item2" value="Geladeira">
+    <label for="TV">Geladeira</label>
+    <br><br>
+
+    <input id="item" type="checkbox" name="item3" value="Computador">
+    <label for="TV">Computador</label>
+    <br><br>
+
+    <h2>Escolha uma cor:</h2>
+
+    <select><!--Tag que mostra itens que podem ser selecionados pelo usuario através de uma lista suspensa-->
+        <option selected disabled value="">Selecione uma cor</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="azul">Azul</option>
+        <option value="amarelo">Amarelo</option>
+        <option value="verde">Verde</option>
+    </select>
+
+    <br><br><br>
+
+    <h2>Digite sua mensagem</h2>
+
+    <textarea name="mensagem" placeholder="Digite aqui sua mensagem" rows="15" cols="55" >Um texto de exemplo</textarea><!--Cria um campo onde se possa descrever algum tipo de texto, se define o tamanho deste campo através da tag rows e cols-->
+    <br><br>
+
+    <input type="submit" value="Enviar formulário"><!--Cria-se um botão de envio de formulário-->
+
+    <h1>Site de referencia</h1>
+    <hr> 
+    <a href="https://www.google.com.br" target="_blank">Visite o Google</a> <br>
+    <a href="/link.html/link.html"></a><br>
+
+    <hr> <br><br>
+
+   <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNoW_q317UOTryWeHy4zunnA5cx2f1nvgwawU4xhWzQSuYrEpauhvBoRVpABAr9sehVByY1A8somJkZhAjrb2ylyPs0ORjs1FKI6ySHU784-2N7T1_VeRqHl8xV14DBMu-XK8zAhrw90Q/s1600/yuyuhakusho_25.jpg" width="400" alt="Time urameshi">
+
+    <h1>Tabela</h1>
+    <table style="width: 40%" border="1" style="text-align: center;">
+
+    <caption>Tabela de Projetos</caption>
+    <thead>
+        <tr>
+            <th>Mês</th>
+            <th>Descrição projeto</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Janeiro</td>
+            <td>2024 - Relatorios de preventiva bimestral</td>
+        <tr>
+            <td>Março</td>
+            <td>Revisão de projetos 2024</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>Junho</td>
+            <td>projetos emergenciais 2024</td>
+        </tr>
+    </tfoot>
+    </table>
+    <br><br>
+    <h2>Video</h2>
+    <iframe src="https://www.w3schools.com/html/default.asp" width="50%" height="100" title="Meu iframe"></iframe>
+
+</form><!--Fecha a tag de formulário-->
+</body><!--Fechamento da tag do corpo da página-->
+</html><!--Fechamento do HTML-->
